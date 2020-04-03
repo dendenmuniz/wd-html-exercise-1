@@ -1,0 +1,144 @@
+/* General */
+body {
+  font-family: 'Gothic A1', sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 900;
+}
+h1 {
+  font-size: 36px;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 10px;
+  font-weight: 900;
+  color: #797979;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 13px;
+}
+
+/* Container */
+.container {
+  box-sizing: border-box;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 64px 16px 32px 16px;
+}
+
+/* Header */
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.personal-info .picture {
+  width: 100px;
+  height: 110px;
+  border-radius: 500px;
+  border: solid 6px black;
+  margin-bottom: 24px;
+}
+.personal-info .data {
+  text-align: center;
+}
+.personal-info .data .subtitle {
+  font-size: 24px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.big-text {
+  color: rgb(33, 37, 41);
+  max-width: 640px;
+  font-size: 20px;
+}
+
+@media(min-width: 550px) {
+  .personal-info {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+  .personal-info .picture {
+    margin-right: 24px;
+  }
+  .personal-info .data {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+  }
+}
+
+/* Content */
+.section ul {
+  padding-left: 16px;
+}
+.section li {
+  list-style-type: square;
+}
+
+.section .number-square {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  padding: 2px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  text-align: right;
+  vertical-align: top;
+}
+
+@media(min-width: 550px) {
+  .section .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 24px
+  }
+}
+
+/* Footer */
+.contact-list {
+  padding-left: 0;
+}
+.contact-list li {
+  list-style-type: none;
+}
+.contact-list a {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  background-color: black;
+  color: white;
+  border: solid 4px white;
+  font-size: 11px;
+}
+
+.contact-list i {
+  margin-right: 8px;
+}
+
+.contact-list a:hover {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  border: solid 4px black;
+  
+}
